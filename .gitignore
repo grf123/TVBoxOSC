@@ -88,3 +88,8 @@ lint/tmp/
 /LTDecodeSpace
 /adb.exe
 /LTDecodeNew3.exe
+
+# IDE-generated local files
+.idea/.gitignore
+.idea/deploymentTargetSelector.xml
+.idea/migrations.xml
