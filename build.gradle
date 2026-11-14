@@ -16,6 +16,12 @@ buildscript {
 
 allprojects {
     repositories {
+        // jcenter 已于 2021 年关停，以下仓库里 loadsir / tv-recyclerview / autosize /
+        // okgo / rtmp-client 等老依赖只存在于 jcenter；阿里云镜像仍完整托管，故置于最前
+        maven { url "https://maven.aliyun.com/repository/public" }
+        maven { url "https://maven.aliyun.com/repository/jcenter" }
+        maven { url "https://maven.aliyun.com/repository/google" }
+        maven { url "https://maven.aliyun.com/repository/gradle-plugin" }
         gradlePluginPortal()
         google()
         mavenCentral()
